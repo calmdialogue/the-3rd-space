@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>The 3rd Space</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+
+<body>
+
+<div id="app">
+
+<h1>The 3rd Space</h1>
+
+<div id="loading">
+読み込み中...
+</div>
+
+<div id="register" class="hidden">
+
+<h2>ユーザー登録</h2>
+
+<p>合言葉を入力してください</p>
+
+<input id="passphrase" placeholder="合言葉">
+
+<button id="registerBtn">
+登録
+</button>
+
+</div>
+
+<div id="submit" class="hidden">
+
+<h2 id="roleLabel"></h2>
+
+<p id="cooldown"></p>
+
+<textarea id="message"
+placeholder="伝えたいことを書いてください"></textarea>
+
+<button id="submitBtn">
+提出
+</button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
