@@ -6,7 +6,7 @@ let role = null
 async function init() {
 
     await liff.init({
-        liffId: "LIFF_ID_HERE"
+        liffId: "2009478496-zjVvv8UA"
     })
 
     const profile = await liff.getProfile()
