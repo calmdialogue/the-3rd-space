@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# env
+.env
+.envrc
+
+# local tools
+.gcloud/
+google-cloud-sdk/
+
+# python
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+
+# secrets
+*.json
