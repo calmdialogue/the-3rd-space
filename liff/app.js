@@ -96,25 +96,27 @@ document.getElementById("registerBtn").onclick = async () => {
 
 document.getElementById("submitBtn").onclick = async () => {
 
-    const text =
-        document.getElementById("message").value
+    const text = document.getElementById("message").value
 
-    await fetch(API + "/liff/submit", {
-
+    const res = await fetch(API + "/liff/submit", {
         method: "POST",
-
         headers: {
             "Content-Type": "application/json"
         },
-
         body: JSON.stringify({
             userId: userId,
             text: text
         })
-
     })
 
-    alert("提出しました")
+    const data = await res.json()
+
+    if (data.ok) {
+        alert("提出しました")
+        document.getElementById("message").value = ""
+    } else {
+        alert("提出できませんでした")
+    }
 
 }
  
